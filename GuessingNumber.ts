@@ -12,8 +12,9 @@ import showBanner from "node-banner";
 let randomNumber: number = Math.ceil((Math.random()*10))
 let i =1
 
-console.log(chalk.magentaBright("In first stage guess the number from 1 to 10"));
+
 async function  guessingNumber(call:any){
+    console.log(chalk.magentaBright("In first stage guess the number from 1 to 10"));
     let answer: any = await inquirer.prompt([{
         name: "Usernumber",
         type: "number",
